@@ -10,7 +10,18 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  // ваш код...
+  if (name == !true) {
+    alert("The name is empety");
+  }
+  else  if (name.length<4 ){
+    alert("The name must be longer than 4 characters");
+  }
+  else if(name.indexOf(' ') >= 0){
+    alert("There are spaces in the name.")
+  }
+  else{
+    return name;
+  }
 }
 
 function sayHello() {
@@ -22,3 +33,4 @@ function sayHello() {
     print('Некорректное имя');
   }
 }
+//проверка hw2.html 
