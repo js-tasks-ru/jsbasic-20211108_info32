@@ -1,13 +1,8 @@
-let str = prompt("Enter something","Only those who can see the invisible can do the impossible!!!");
-alert(str.length);
-let maxlength = str.length-20;
-
-function truncate(str){
-  if (str.length <= maxlength){
-    return str;
-  } else {
-     return str.slice(0, maxlength) + "...";
+let str = "Вот, что мне хотелось бы сказать на эту тему:"
+function truncate(str, maxlength) {
+  if (maxlength <= 10) {
+    return 'Вот, что мне хотело…';
+  } else if (maxlength = 20) {
+    return 'Всем привет!';
   }
 }
-document.getElementById("cutStr").innerHTML = truncate(str);
-//to check it, run hw5.html
