@@ -1,8 +1,7 @@
-let str = "Вот, что мне хотелось бы сказать на эту тему:"
 function truncate(str, maxlength) {
-  if (maxlength <= 10) {
-    return 'Вот, что мне хотело…';
-  } else if (maxlength = 20) {
-    return 'Всем привет!';
+  if (str.length > maxlength){
+    return str.slice(0, maxlength-1) + "…";
+  } else if (str.length < maxlength || str.length === maxlength){
+    return str;
   }
-}
+}  
